@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joe Bombassei" >
+    <meta name="description" content="W3 Demo" >
+    
+    <title>W3 | Demo</title>
+
+    <style>
+
+        .bg-main {
+            background-color:whitesmoke;
+        }
+
+        #wrapper {
+            width:900px;
+            margin:auto;/*equal space to left and right of wrapper*/
+        }
+
+        h1 {
+            text-align:center;
+            color:darkslategray;
+        }
+
+        #nav {
+            text-align:center;
+            /*width:500px;
+            border:1px solid red;*/
+        }
+
+        .border {
+            border:1px solid black;
+            margin-bottom:10px;
+            padding:5px;
+        }
+
+        #footer {
+            text-align: center;
+        }
+
+        .nav-link {
+            font-size: 26px;
+            text-decoration:none;
+            margin:15px;
+        }
+
+        /*there are 4 states to links: link, hover, active, visited*/
+        .nav-link:hover {
+            color:darkviolet;
+        }
+
+
+    </style>
+
+</head>
+<body style="background-color:rgb(192,191,191)">
+
+    <!--CONTAINER of the entire page content-->
+    <div id="wrapper">
+
+        <!--HEADER-->
+        <div id="header" class="bg-main border">
+
+            <h1 id="title">PAGE TITLE</h1>
+
+        </div><!--Header-->
+        <!--NAV-->
+        <div id="nav" class="border">
+
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="about.html" class="nav-link">ABOUT</a>
+            <a href="school.html" class="nav-link">SCHOOLING</a>
+            <a href="hobbies.html" class="nav-link">HOBBIES</a>
+
+        </div><!--Nav-->
+        <!--MAIN-CONTENT-->
+        <div id="content" class="border">
+
+            <h2>MAIN CONTENT - TITLE PAGE</h2>
+            
+        </div><!--Main-content-->
+        <!--FOOTER-->
+        <div id="footer" class="bg-main border">
+
+            <p>&copy; 2021, J BOMBASSEI | SE111.12</p>
+
+        </div><!--Footer-->
+
+    </div><!--Wrapper-->
+</body>
+</html>
