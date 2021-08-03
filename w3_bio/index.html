@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Joe Bombassei-->
+    <!--SE111.12-->
+    <!--8/3/2021-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joe Bombassei" >
+    <meta name="description" content="W3 Demo" >
+    
+    <title>W3 | Bio</title>
+
+    <style>
+
+        .bg-main {
+            background-color:gainsboro;
+        }
+
+        #wrapper {
+            width:900px;
+            margin:auto;/*equal space to left and right of wrapper*/
+        }
+
+        h1 {
+            text-align:center;
+            color:darkslategray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        
+        #nav {
+            text-align:center;
+            /*width:500px;
+            border:1px solid red;*/
+        }
+
+        .border {
+            border:1px solid black;
+            margin-bottom:10px;
+            padding:5px;
+        }
+
+        #footer {
+            text-align: center;
+        }
+
+        .nav-link {
+            font-size: 26px;
+            text-decoration:none;
+            margin:15px;
+        }
+
+        /*there are 4 states to links: link, hover, active, visited*/
+        .nav-link:hover {
+            color:blue;
+        }
+
+        .ship {
+            width: 300px;
+            height: 200px;
+        }
+
+
+    </style>
+
+</head>
+<body style="background-color:aliceblue">
+
+    <!--CONTAINER of the entire page content-->
+    <div id="wrapper">
+
+        <!--HEADER-->
+        <div id="header" class="bg-main border">
+
+            <h1 id="title">JOE BOMBASSEI</h1>
+            
+        </div><!--Header-->
+        <!--NAV-->
+        <div id="nav" class="border">
+
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="school.html" class="nav-link">SCHOOLS</a>
+            <a href="hobbies.html" class="nav-link">HOBBIES</a>
+
+        </div><!--Nav-->
+        <!--MAIN-CONTENT-->
+        <div id="content" class="border">
+
+            <h2>ABOUT ME</h2>
+            <p>I am 25 years old I was in the <b>Navy</b> for <i>five</i> years on a submarine out of <u>Norfolk, VA</u>. <img src="images/ssn750.jpg" alt="SSN 750" class="ship"><br>I started attending school here at <i>New England Institute of 
+            Technology</i> in March 2021. I have enjoyed my time here so far. Attending school here has opened opportunities for me, and has been a wonderful experience so far. I can't wait to continue my education through a <strong>Bachelor's degree in Software Engineering</strong>. <em>My instructors are wonderful :)</em>.</p>
+    
+            
+        </div><!--Main-content-->
+        <!--FOOTER-->
+        <div id="footer" class="bg-main border">
+
+            <a href="https://www.neit.edu" target="blank">
+                <img src="images/neit_logo.jpg" alt="NEIT LOGO"></a>
+            <p>&copy; 2021, J BOMBASSEI | SE111.12</p>
+
+        </div><!--Footer-->
+
+    </div><!--Wrapper-->
+</body>
+</html>
