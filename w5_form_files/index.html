@@ -27,15 +27,92 @@
             <tbody>
                 <tr>
                     <td label for="gfirst">Parent/Gaurdian Name</td>
-                    <td><input type="text" name="gfirst" id="gfirst" placeholder="First Name" maxlength="20"><br><input type="text" name="gfirst" id="glast" placeholder="Last Name" maxlength="20"></td>
+                    <td><input type="text" required name="First" id="gfirst" placeholder="First Name" maxlength="20"><br><input type="text" name="Last" id="gfirst" placeholder="Last Name" maxlength="20"></td>
                 </tr>
 
                 <tr>
                     <td label for="cfirst">Child's First Name</td>
-                    <td><input type="text" name="cfirst" od="cfirst" placeholder="Child's First Name"></td>
+                    <td><input type="text" required name="Child's Name" id="cfirst" placeholder="Child's First Name"></td>
                 </tr>
 
+                <tr>
+                    <td label for="age">Child's Age</td>
+                    <td><input type="number" required name="Age" value="3"></td>
+                </tr>
+                <tr>
+                    <td><h2>Date and Time</h2></td>
+                </tr>
+
+                <tr>
+                    <td label for="date">Date</td>
+                    <td><input type="date" required name="Date"></td>
+                </tr>
+
+                <tr>
+                    <td label for="time">Start Time</td>
+                    <td><input type="time" required name="Time"></td>
+                </tr>
+
+                <tr>
+                    <td label for="guests">Number of Guests</td>
+                    <td><input type="number" name="Guests" value="5"></td>
+                </tr>
+
+                <tr>
+                    <td><h2>Food</h2></td>
+                </tr>
+
+                <tr>
+                    <td label for="size">Size</td>
+                    <td><input type="radio" name="Size" value="Sm">SM<br>
+                    <input type="radio" name="Size" value="Md">MED<br>
+                    <input type="radio" name="Size" value="Lg">LG
+                    </td>
+                </tr>
+
+                <tr>
+                    <td label for="drinks">Drinks</td>
+                    <td><input type="checkbox" required name="Drink 1" checked="true" value="Coke">
+                    <label for="drink1">Coke</label><br>
+                    <input type="checkbox" required name="Drink 2" value="Sprite">
+                    <label for="drink2">Sprite</label><br>
+                    <input type="checkbox" required name="Drink 3" value="Fruit Punch">
+                    <label for="drink3">Fruit Punch</label><br>
+                    <input type="checkbox" required name="Drink 4" value="Lemonade">
+                    <label for="drink4">Lemonade</label><br>
+                    <input type="checkbox" required name="Drink 5" value="Iced Tea">
+                    <label for="drink5">Iced Tea</label>
+                </td>
+                </tr>
+
+                <tr>
+                    <td label for="cake">Cake</td>
+                    <td><select name ="Cake">
+                        <option>Chocolate</option>
+                        <option>Vanilla</option>
+                        <option>I'll bring my own</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td><h2>Decorations</h2></td>
+                </tr>
+
+                <tr>
+                    <td label for="colors">Color Scheme</td>
+                    <td>Choose a color scheme for the party<br>
+                    <input type="color" name="Colors"></td>
+                </tr>
+
+                <tr>
+                    <td label for="comments">Additional Comments</td>
+                    <td><textarea placeholder="Please add any additional comments here" name="Comments"></textarea></td>
+                </tr>
                 
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
                 
             </tbody>
                 
