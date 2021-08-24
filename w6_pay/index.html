@@ -19,20 +19,14 @@
 
         var hour = Number(prompt("How many hours has the employee worked in the last 2 weeks?: "))
 
-        var tax = Number(prompt("What is the tax rate for the employee?: "))
+        var tax = Number(prompt("What is the tax percent rate for the employee?: ")) / 100
 
-        var grossPay = pay * hour
+        var grossPay = (pay * hour).toFixed(2)
 
-        var uncleSam = grossPay * tax
+        var uncleSam = (grossPay * tax).toFixed(2)
 
-        var netPay = grossPay - uncleSam
-
-        var g = grossPay.tofixed(2);
-
-        var u = uncleSam.tofixed(2);
-
-        var n = netPay.tofixed(2);
-
+        var netPay = (grossPay - uncleSam).toFixed(2)
+        
         alert(`Gross Pay: $${grossPay}\nUncle Sam: $${uncleSam}\nNet Pay: $${netPay}`)
 
         console.log(`The Gross Pay is: ${grossPay}`)
@@ -41,11 +35,5 @@
 
 
     </script>
-
-
-
-
-
-
 </body>
 </html>
