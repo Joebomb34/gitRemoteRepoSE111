@@ -104,6 +104,99 @@
     <p>end</p>
     <!--IN-DOCUMENT JAVASCRIPT BELOW-->
     <script>
+
+        //selecting the body element
+        var body = document.querySelector(`body`)
+        console.log(body)
+
+        //creating a new variable to hold new HTML elements
+        var newP = ``
+
+        newP += `<p>`
+        newP += `hello world! this content was added to the page using Javascript!`
+        newP += `</p>`
+        console.log(newP)
+
+        //adding new HTML element info to the end of the body element
+        body.innerHTML += newP
+
+        //adding an event listener to the #enter-button at the end of the mini form
+        document.querySelector(`#enter-button`).addEventListener(`click`, alertInfo)
+        
+        //event specific function requires the 'e' for eent parameter to hold event data
+        function alertInfo(e)
+        {
+            //local variables: their value only exsits inside of alertInfo
+            var fname = document.querySelector(`#first`).value
+            var lname = document.querySelector(`#last`).value
+            var age = document.querySelector(`#age`).value
+            //cast age as a number
+            age = Number(age)
+
+            //check to make sure eventListener is added correctly and works on click
+            console.log(fname)
+            console.log(lname)
+            console.log(age)
+
+            var full = fname + ' ' + lname
+
+            alert(`Hi there, ${full}!`)
+
+            var hello = document.querySelector(`#hello`)
+
+            hello.innerHTML += ` ${full}!`
+
+            //store HTML element #info into the var info to use
+            var info = document.querySelector(`#info`)
+
+            //run some cool cat and doggo calculations
+            var dog_age = (age * 7).toFixed(1)
+            var cat_age = (age * 4).toFixed(1)
+
+            console.log(`DOG YRS: ${dog_age} CAT YRS: ${cat_age}`)
+
+            //add the new data to the #info element
+            info.innerHTML += `<p><br>Here is some info on the age you entered :] <br><br> YOUR AGE: ${age}<br><br>DOG AGE: ${dog_age}<br><br>CAT AGE: ${cat_age}</p>`
+
+        }//alertInfo() close
+        
+        console.log(document.querySelector(`#enter-button`))
+
+        //global variables - can be used in any functions ater this
+        var me = document.querySelector(`#me`)
+        var you = document.querySelector(`#you`)
+
+        console.log(me)
+
+        //adding event listener to non-button clicks
+        me.addEventListener(`click`, clicked)
+
+        function clicked(e)
+        {
+            me.style.color = "red"
+            console.log(`clicked() has been reached`)
+        }//clicked() close
+
+        you.addEventListener(`click`, greenClicked)
+
+        function greenClicked(e)
+        {
+            you.style.color = "green"
+            console.log(`greenClick() has been reached`)
+        }//greenClicked close
+
+
+        //selecting another button on the page
+        var button = document.querySelector(`#submit`)
+
+        //demo of anonymous function
+        button.addEventListener(`click`, function(e){
+            //checking out the event parameter
+            console.log(e)
+            console.dir(e)
+        }//anonymous function close
+        )
+
 	</script>
 	
 </body>
