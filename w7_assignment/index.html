@@ -40,44 +40,37 @@
                     <td><input type="text" id="rate"></td>
                 </tr>
     
-
+            </tbody>
+        </table>
                 
 
 
 
                 <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-                <tr>
-                    <td><input type="button" id="enter-button" value="Enter"></td>
-                </tr>
-                
+        <input type="button" id="enter-button" value="Enter">
 
-                
-                <tr>
-                    <td><h3>Employee Info: </h3></td>
-                    <td><div id="final" style="border:1px solid rgb(87, 86, 86); padding:15px; background-color:rgb(168, 168, 168);">
-                        
-                        <p id="info" style="font-family:Courier New, monospace;"><i>Information will be loaded once above form is filled.</i></p>
-                    <!---NOTES FOR TESTING:
+        <br>
+        <br>
+
+        <div id="final" style="border:1px solid rgb(87, 86, 86); padding:15px; background-color:rgb(168, 168, 168);">
+
+            <h3>Employee Info: </h3>
+            <p id="info" style="font-family:Courier New, monospace;"><i>Information will be loaded once above form is filled.</i></p>
+            <!---NOTES FOR TESTING:
                     *below is where the form values (and new values processed by the js) will be displayed-->
-                        <p id="check" style="font-family:Courier New, monospace; width:220px; text-align:right;"></p>
-                        </div>
-                    </td>
-                    
-                </tr>
-                
+            <p id="check" style="font-family:Courier New, monospace; width:220px; text-align:right;"></p>
+        </div>
 
-                
+        <br>
+        <br>
 
-                <!--NOTES FOR TESTING:
-                    *clicking the below button will trigger a call to the submitNow()
-                    *success will be determined if correct info is displayed in the alert()-->
-                <tr>
-                    <td><h3><i>If the above information is correct, please press "SUBMIT"</i></h3></td>
-                    <td><input type="button" id="submit" value="SUBMIT"></td>
-                </tr>
+        <!--NOTES FOR TESTING:
+                *clicking the below button will trigger a call to the submitNow()
+                *success will be determined if correct info is displayed in the alert()-->
+        <h3><i>If the above information is correct, please press "SUBMIT"</i></h3>
+        <input type="button" id="submit" value="SUBMIT">
                 
-            </tbody>
-        </table>
+          
     </form>
 
     <script>
