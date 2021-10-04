@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            border:15px;
+        }
+        #nav{
+            text-align: center;
+        }
+        .seacorp{
+            width:400px;
+        }
+        .basketball{
+            width:110px;
+            height:110px;
+        }
+        .hide{
+            display:none;
+        }
+        body{
+           background-color: transparent; 
+        }
+        .nav-link{
+            font-size:26px;
+            text-decoration: none;
+            margin:15px;
+        }
+        .nav-link:hover{
+            color:teal;
+        }
+        .web:hover{
+            color:teal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>JOE BOMBASSEI</h1>
+    <hr>
+    <div id="nav">
+        <a href="#" id="bio-link" class="nav-link">Bio</a>
+        <a href="#" id="education-link" class="nav-link">Education</a>
+        <a href="#" id="hobbies-link" class="nav-link">Hobbies</a>
+    </div>
+    <hr>
+    <div id="main">
+        <div id="bio">
+            <h2>My Bio</h2>
+            <img src="images/seacorp_logo.jpg" alt="SEACORP Logo" class="seacorp">
+            <p>A brief bio about myself, I was in the Navy for 5 years before decieding that I wanted to attend college at the end of my enlistment. I worked at Chipotle right down the road for a brief time, I now work as a <i>government contractor in Newport</i>.</p>
+            <p>I want to be a <b>Software Engineer</b> because in highschool I found the little web development class very interesting. I can't wait to learn more this semester, and keep learning throughout my career.</p>
+            <hr>
+        </div>
+        <div id="ed">
+            <h2>Schooling</h2>
+            <ul>
+                <li>Catherine M. McGee Middle School</li>
+                <li><a href="https://ecanewington.com" target="_blank" class="web">Emmanuel Christian Academy</a> <i>HS Diploma</i></li>
+                <li>New England Institute of Technology <i>N/A</i></li>
+            </ul>
+            <hr>
+        </div>
+        <div id="hobbies">
+            <h2>Hobbies</h2>
+            <ol>
+                <li>Basketball</li>
+                <li>Big Chilling</li>
+                <li>Shooting</li>
+            </ol>
+            <img src="images/basketball.jpg" alt="Basketball" class="basketball">
+            <hr>
+        </div>
+        <div id="footer">
+            <p>&copy;2021 Joe Bombassei | W1 Assignment</p>
+        </div>
+    </div>
+    <hr>
+    <script>
+        
+        var blink = document.querySelector(`#bio-link`)
+        var elink = document.querySelector(`#education-link`)
+        var hlink = document.querySelector(`#hobbies-link`)
+
+        var bio = document.querySelector(`#bio`)
+        var ed = document.querySelector(`#ed`)
+        var hobbies = document.querySelector(`#hobbies`)
+
+        blink.addEventListener(`click`, showBio)
+        function showBio(e)
+        {
+            e.preventDefault()
+            bio.classList.remove(`hide`)
+            ed.classList.add(`hide`)
+            hobbies.classList.add(`hide`)
+
+        }
+        elink.addEventListener(`click`, showEd)
+        function showEd(e)
+        {
+            e.preventDefault()
+            bio.classList.add(`hide`)
+            ed.classList.remove(`hide`)
+            hobbies.classList.add(`hide`)
+
+        }
+        hlink.addEventListener(`click`, showHobbies)
+        function showHobbies(e)
+        {
+            e.preventDefault()
+            bio.classList.add(`hide`)
+            ed.classList.add(`hide`)
+            hobbies.classList.remove(`hide`)
+
+        }
+
+    </script>
+</body>
+</html>
