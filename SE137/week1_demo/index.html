@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            display:inline-block; /*none in place of inline-block displays nothing, hides the words on the webpage*/
+            width: 200px;
+            height: 200px;
+            border:1px solid black;
+            background-color:#000000
+        }
+
+        #second{
+            background-color:turquoise;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This <b>is</b> a div
+    </div>
+    <div id="second">
+        This <b>is</b> a div
+    </div>
+    <div>
+        This <b>is</b> a div
+    </div>
+
+    <script>
+        document.querySelector(`#second`).style.backgroundColor=`red`//because this gets processed after the CSS the box will now show up red
+    </script>
+</body>
+</html>
