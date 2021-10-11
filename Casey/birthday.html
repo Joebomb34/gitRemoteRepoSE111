@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="J BOMBASSEI">
+    <meta name="description" content="Casey's Birthday">
+
+    <title>Casey's Birthday</title>
+    <style>
+        table, tr, td{
+            border:1px solid black;
+        }
+        body{
+            background-image: url('images/hbd.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        p, tr, td{
+            color: black;
+            font-size:larger;
+        }
+
+        h1, h2{
+            color: black;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+    <!--Build your Table and Form here-->
+        <form method="GET" action="confirm.html">
+            <h1>Casey's Birthday Date</h1>
+            <h2>You Choose</h2>
+            <thead>
+                <tr>
+                    <td>What We'll Do</td>
+                    <td>Your Choices</td>
+                </tr>
+            </thead>
+            
+            <tbody>
+
+                <tr>
+                    <td label for="dine">Dinner</td>
+                    <td><input type="radio" name="Dinner" value="Phil's Main Street Grille">Phil's Main Street Grille<br>
+                    <input type="radio" name="Dinner" value="Garden of Eve">Garden of Eve<br>
+                    <input type="radio" name="Dinner" value="Chapel Grille">Chapel Grille
+                    </td>
+                </tr>
+
+                <tr>
+                    <td label for="decide">Birthday Adventure</td>
+                    <td><input type="radio" name="Event" value="Escape Room">Escape Room<br>
+                    <input type="radio" name="Event" value="Axe Throwing">Axe Throwing
+                    </td>
+                </tr>
+                <tr>
+                    <td label for="desert">Desert</td>
+                    <td><select name ="Desert">
+                        <option>Ice Cream</option>
+                        <option>Frozen Yogurt</option>
+                        <option>Milkshake</option>
+                        <option>Cheesecake</option>
+                        <option>Other idea</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td label for="comments">Additional Comments</td>
+                    <td><textarea placeholder="Please add any additional comments here" name="Comments"></textarea></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+                
+            </tbody>
+                
+                
+            
+            
+        </form>
+    </table>
+</body>
+</html>
