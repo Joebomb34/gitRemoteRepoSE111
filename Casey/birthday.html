@@ -11,7 +11,9 @@
     <title>Casey's Birthday</title>
     <style>
         table, tr, td{
-            border:1px solid black;
+            border:1px solid blue;
+            margin-left: auto;
+            margin-right: auto;
         }
         body{
             background-image: url('images/hbd.jpeg');
@@ -20,12 +22,12 @@
             background-size: 100% 100%;
         }
         p, tr, td{
-            color: black;
+            color: blue;
             font-size:larger;
         }
 
         h1, h2{
-            color: black;
+            color: blue;
             text-align: center;
         }
         
@@ -47,33 +49,37 @@
             <tbody>
 
                 <tr>
-                    <td label for="dine">Dinner</td>
-                    <td><input type="radio" name="Dinner" value="Phil's Main Street Grille">Phil's Main Street Grille<br>
-                    <input type="radio" name="Dinner" value="Garden of Eve">Garden of Eve<br>
-                    <input type="radio" name="Dinner" value="Chapel Grille">Chapel Grille
+                    <td label for="decide">Birthday Adventure</td>
+                    <td><select name="Event">
+                        <option>Select</option>
+                        <option>Escape Room</option>
+                        <option>Axe Throwing</option>
+                    </select>
                     </td>
+                    
                 </tr>
 
                 <tr>
-                    <td label for="decide">Birthday Adventure</td>
-                    <td><input type="radio" name="Event" value="Escape Room">Escape Room<br>
-                    <input type="radio" name="Event" value="Axe Throwing">Axe Throwing
+                    <td label for="dine">Dinner</td>
+                    <td><select name="Dinner">
+                        <option>Select</option>
+                        <option>Rooftop at the Providence G</option>
+                        <option>Garden of Eve</option>
+                        <option>Chapel Grille</option>
+                        <option>Other Idea</option>
+                    </select>
                     </td>
                 </tr>
                 <tr>
                     <td label for="desert">Desert</td>
                     <td><select name ="Desert">
+                        <option>Select</option>
                         <option>Ice Cream</option>
                         <option>Frozen Yogurt</option>
                         <option>Milkshake</option>
-                        <option>Cheesecake</option>
-                        <option>Other idea</option>
+                        <option>Desert at Restaurant</option>
+                        <option>Other Idea</option>
                     </select></td>
-                </tr>
-
-                <tr>
-                    <td label for="comments">Additional Comments</td>
-                    <td><textarea placeholder="Please add any additional comments here" name="Comments"></textarea></td>
                 </tr>
                 
                 <tr>
