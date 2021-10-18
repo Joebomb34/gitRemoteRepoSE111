@@ -6,32 +6,64 @@
 h1{
     font-family: 'Bebas Neue', cursive;
 }
+
+h2{
+    font-size:56px;
+}
 p{
-    padding:50px;
+    padding:10px;
     font-family: 'Andada Pro', serif;
+    font-size:24px;
 
 }
 
 #main{
     display:grid;
     grid-template-areas: 'header header header'
+                        'headbio headbio headbio'
                          'bio bio bio'
-                         'hobbies hobbies ed'
+                         'headhob stock headsch'
+                         'hobbies stock ed'
                          'footer footer footer';
-    grid-gap: 20px;
+    grid-gap: 30px;
 }
 #header{
     grid-area:header;
+}
+#headbio{
+    grid-area: headbio;
+    background-color:whitesmoke;
 }
 #bio{
     grid-area:bio;
 }
 
+#headsch{
+    grid-area: headsch;
+    background-color:whitesmoke;
+}
+
 #ed{
     grid-area:ed;
 }
+
+#headhob{
+    grid-area:headhob;
+    background-color: whitesmoke;
+}
 #hobbies{
     grid-area:hobbies;
+}
+
+#stock{
+    grid-area:stock;
+    opacity: 33%;
+    
+}
+.stonk{
+    grid-area:stock;
+    width:400px;
+    height:335px;
 }
 #footer{
     grid-area:footer;
@@ -39,11 +71,12 @@ p{
 
 ul, ol, .nav-link{
     font-family: 'Andada Pro', serif;
+    font-size:24px;
 }
 
-#bio{
+/*#bio{
     border-bottom:10px solid gray;
-}
+}*/
 
 #nav{
     text-align: center;
@@ -74,12 +107,13 @@ body{
     color:teal;
 }
 .web{
-    color:coral;
+    color:purple;
 }
 .web:hover{
     color:teal;
 }
 #footer{
     color:red;
+    text-align: center;
 }
 
