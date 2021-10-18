@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@700&family=Bebas+Neue&display=swap');
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+}
+p{
+    padding:50px;
+    font-family: 'Andada Pro', serif;
+
+}
+
+ul, ol, .nav-link{
+    font-family: 'Andada Pro', serif;
+}
+
+#bio{
+    border-bottom:10px solid gray;
+}
+#ed{
+    border-bottom:10px solid gray;
+}
+#hobbies{
+    border-bottom:10px solid gray;
+}
+#nav{
+    text-align: center;
+    border-bottom:10px solid grey;
+    border-top:10px solid grey;
+}
+.seacorp{
+    width:400px;
+}
+.basketball{
+    width:110px;
+    height:110px;
+}
+.hide{
+    display:none;
+}
+body{
+   background-color: transparent;
+   background: linear-gradient(162deg, rgba(131,58,180,1) 0%, rgba(29,253,249,1) 40%, rgba(252,176,69,1) 69%); 
+}
+.nav-link{
+    font-size:26px;
+    text-decoration: none;
+    margin:15px;
+    display:inline-block;
+}
+.nav-link:hover{
+    color:teal;
+}
+.web{
+    color:coral;
+}
+.web:hover{
+    color:teal;
+}
+#footer{
+    color:red;
+}
+
