@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Teko', 'sans-serif';
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+main{
+    width: 1820px;
+}
+header{
+    height: 100px;
+    background-color: #070707;
+    display: flex;
+    width:100%;
+    align-items: flex-end;
+    padding: 0 41px 0 30px;
+    color: #880908;
+}
+h1{
+    font-weight: normal;
+}
