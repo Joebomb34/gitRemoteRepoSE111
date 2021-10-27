@@ -27,4 +27,32 @@ header{
 }
 h1{
     font-weight: normal;
+    margin-bottom: 5px;
 }
+nav{
+    font-size: 60px;
+}
+section{}
+#banner{}
+.1{}
+.r{
+    grid-area: r;
+    border-top: 2px solid red;
+    width: 700px
+}
+.r img{
+    width: 641px;
+}
+#poster{
+    width: 310px;
+    display: block;
+
+}
+h2{}
+#ad{}
+#ad-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#price{}
