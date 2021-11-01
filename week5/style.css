@@ -1,0 +1,28 @@
+@charset "UTF_8";
+
+main{
+    background-color: #667;
+    border:2px solid black;
+    min-height:300px;
+    width: 1040px;
+    position: relative;
+    top:30px;
+    margin: 0 auto 0 auto;
+
+}
+
+div{
+    background-color:orangered;
+    border:2px solid black;
+    height:200px;
+    width:300px;
+    overflow-y:hidden;
+    position:relative;
+}
+
+header{
+    position: fixed;
+    top:0;
+    z-index:10;
+    background-color: plum;
+}
