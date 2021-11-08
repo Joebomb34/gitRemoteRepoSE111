@@ -20,11 +20,12 @@ for(let i = 0; i < tabs.length; i++)
 function selectTab(e){
     for(let i = 0; i < tabs.length; i++)
     {
-        tabs[i].style.backgroundColor = `crimson`;
+        tabs[i].style.backgroundColor = `#161616`;
     }
-    e.target.style.backgroundColor = `yellow`;
+    e.target.style.backgroundColor = `#373737`;
     p.innerHTML =  `<a href=#>Words</a> >>
                     <a href=#>Words</a> >>
                     <a href=#>Words</a> >>
                     <a href=#>Tab ${Array.from(tabs).indexOf(e.target)+1}</a>`
+                    
 }

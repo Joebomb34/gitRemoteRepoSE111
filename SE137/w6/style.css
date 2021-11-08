@@ -16,15 +16,12 @@ main{
 }
 
 header{
-    padding:10px;
+    padding:23px;
     background-color: #505050;
     color:#E3E3E3;
     
 }
-header span{
-    text-align: center;
-    
-}
+
 
 header img{
     width: 13px;
@@ -44,7 +41,7 @@ section{
 
 aside{
     width: 50px;
-    background-color: cornflowerblue;
+    background-color: #505050;
 
 }
 
@@ -53,19 +50,27 @@ aside{
 footer{
     height: 25px;
     padding:10px;
-    background-color: cyan;
+    background-color: #0254A0;
 }
 
 nav{
-    background-color:crimson;
+    background-color: #373737;
 }
 
 nav a {
     display: flex;
-    width: 100px;
-    height: 25px;
-    background-color: crimson;
+    width: 173px;
+    height: 34px;
+    background-color: #161616;
     float: left;
+    color: #C2C2C2;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 12px;
+}
+nav a:hover{
+    color: #FFFFFF;
+
 }
 
 textarea{
@@ -74,13 +79,13 @@ textarea{
     resize: none;
     outline: none;
     height:100%;
-    background-color: gray;
+    background-color: #060606;
     overflow-y: scroll;
     color: white;
 }
 
 p{
-    background-color: yellow;
+    background-color: #373737;
     margin: 0;
 }
 
@@ -98,7 +103,20 @@ p{
     transition: all .5s;
 }
 
+#inner-tray{
+    background-color: #373737;
+}
+
 .closed{
     width: 0px;
     transition: all .5s;
+}
+
+
+
+footer span{
+    color: #FFFFFF;
+    font-size: 10px;
+    padding-bottom: 10px;
+
 }
