@@ -17,7 +17,18 @@ main{
 
 header{
     padding:10px;
-    background-color: cyan;
+    background-color: #505050;
+    color:#E3E3E3;
+    
+}
+header span{
+    text-align: center;
+    
+}
+
+header img{
+    width: 13px;
+    height: 16px;
 }
 
 section{
