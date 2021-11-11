@@ -1,45 +1,92 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100;400&family=Teko:wght@300&display=swap');
 
 *{
     box-sizing: border-box;
 }
+#cog{
+
+    text-align: right;
+    color: #E3E3E3;
+    
+}
+#fas{
+    margin-left: 9px;
+    width: 26px;
+    height: 32px;
+    color: #E3E3E3;
+
+}
+
+#stream{
+    margin-left: 9px;
+    width: 26px;
+    height: 32px;
+    color: #E3E3E3;
+}
+
+#trash{
+    color: #E3E3E3;
+    width: 26px;
+    height: 32px;
+    margin-left: 9px;
+    margin-top: 850px;
+    margin-bottom: 8px;
+        
+}
 
 html, body {
+    font-family: Roboto;
     height: 100%;
     margin: 0;
 }
 
 main{
+    font-family: Roboto;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 header{
+    font-family: Roboto;
     padding:23px;
     background-color: #505050;
     color:#E3E3E3;
+    display: grid;
+    grid-template-areas: 'header header header';
     
 }
 
 
-header img{
-    width: 13px;
-    height: 16px;
+
+#assign{
+    
+    text-align:center;
 }
 
 section{
+    font-family: Roboto;
     display: flex;
     height: 100%;
 }
 
 #editor{
+    font-family: Roboto;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
+#editor p{
+    font-family: roboto;
+    font-style: normal;
+    color: #E3E3E3;
+
+}
+
 aside{
+    font-family: Roboto;
     width: 50px;
     background-color: #505050;
 
@@ -48,17 +95,21 @@ aside{
 
 
 footer{
+    font-family: Roboto;
     height: 25px;
     padding:10px;
     background-color: #0254A0;
 }
 
 nav{
+    font-family: Roboto;
     background-color: #373737;
 }
 
 nav a {
+    font-family: Roboto;
     display: flex;
+    flex-direction: row;
     width: 173px;
     height: 34px;
     background-color: #161616;
@@ -73,6 +124,19 @@ nav a:hover{
 
 }
 
+nav i{
+    
+    width: 13px;
+    height: 16px;
+    color: #E3E3E3;
+    
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
 textarea{
     width: 100%;
     border-width: 0;
@@ -85,11 +149,22 @@ textarea{
 }
 
 p{
-    background-color: #373737;
+    font-family: Roboto;
+    font-style: normal;
+    background-color: #161616;
     margin: 0;
+    color: #E3E3E3;
 }
 
+p a{
+    color: #0058A9;
+    text-decoration-line: underline;
+}
+
+
+
 .tray{
+    font-family: Roboto;
     width: 200px;
     display: flex;
     justify-content: flex-start;
@@ -98,13 +173,17 @@ p{
 }
 
 .tray, #inner-tray{
+    font-family: Roboto;
     width: 200px;
     background-color: turquoise;
     transition: all .5s;
 }
 
 #inner-tray{
+    font-family: Roboto;
+    font-style: normal;
     background-color: #373737;
+    color: #E3E3E3;
 }
 
 .closed{
@@ -114,9 +193,10 @@ p{
 
 
 
-footer span{
+footer {
+    font-family: Roboto;
     color: #FFFFFF;
     font-size: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 
 }
