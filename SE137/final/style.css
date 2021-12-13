@@ -5,8 +5,8 @@
 }
 
 #navbarNav{
+    padding-left: 10px;
     
-    background-color: #F0F0F0;
     font-size: 20px;
     
     
@@ -14,13 +14,13 @@
 }
 
 .header{
-    width:100%;
-    background-color: #F0F0F0;
+    
+    
     color: #37AF19;
 }
 
 .header2{
-    background-color: #F0F0F0;
+    
     color: black;
 
 }
